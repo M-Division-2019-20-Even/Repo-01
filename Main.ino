@@ -68,7 +68,7 @@ delay(time);
 
 void loop() {
  
-if(Serial.available>0)
+if(Serial.available()>'0')
 {                                     //input from bluetooth
   char data=(char)Serial.read();
   char choice;
